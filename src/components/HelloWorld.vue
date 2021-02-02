@@ -9,7 +9,7 @@ export default {
   name: 'HelloWorld',
  data(){
    return {
-     copyText:""
+     copyText:"这是复制的内容"
    }
  }
 }
