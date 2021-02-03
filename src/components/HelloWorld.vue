@@ -1,6 +1,8 @@
 <template>
  <div>
    <button v-copy="copyText">复制</button>
+   <hr>
+   <button v-longpress="longpress">长按</button>
  </div>
 </template>
 
@@ -10,6 +12,11 @@ export default {
  data(){
    return {
      copyText:"这是复制的内容"
+   }
+ },
+ methods:{
+   longpress(){
+     console.log("长按指令生效")
    }
  }
 }

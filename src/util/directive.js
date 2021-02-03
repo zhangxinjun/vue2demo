@@ -1,6 +1,8 @@
 import copy from "./copy";
+import longpress from "./longpress"
 const directives = {
-  copy
+  copy,
+  longpress
 }
 export default {
   install(Vue){
