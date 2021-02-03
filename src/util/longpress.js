@@ -1,3 +1,12 @@
+
+/**
+ * 1.创建一个定时器，2s后执行
+ * 2.当用户按下按钮时出发mousedown事件，启动定时器；用户松开按钮时调用mouseout事件
+ * 3.如果mouseup事件2s内触发就清除定时器，当作一次普通点击事件
+ * 4.如果定时器没有在2s内被清除，则判定为一次长按，可以执行相关联的函数
+ * 5.移动端要考虑toushstart，touchend事件
+ */
+
 const longpress = {
   bind:function(el,binding) {
     if(typeof binding.value !== "function"){

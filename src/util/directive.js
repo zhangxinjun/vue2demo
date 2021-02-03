@@ -1,8 +1,10 @@
 import copy from "./copy";
 import longpress from "./longpress"
+import debounce from "./debouncd"
 const directives = {
   copy,
-  longpress
+  longpress,
+  debounce
 }
 export default {
   install(Vue){

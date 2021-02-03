@@ -3,6 +3,8 @@
    <button v-copy="copyText">复制</button>
    <hr>
    <button v-longpress="longpress">长按</button>
+   <hr>
+   <input type="text" v-debounce="debounce">
  </div>
 </template>
 
@@ -17,6 +19,9 @@ export default {
  methods:{
    longpress(){
      console.log("长按指令生效")
+   },
+   debounce(){
+     console.log("防抖")
    }
  }
 }
